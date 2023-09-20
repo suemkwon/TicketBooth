@@ -1,2 +1,2 @@
 # TicketBooth
-ticketing system for the Olympics 
+ticketing system for the a movie theater
