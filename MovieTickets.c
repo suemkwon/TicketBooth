@@ -37,12 +37,12 @@ cleardevice();
   {
     settextstyle(10,0,3);
     setcolor(random(color));
-    outtextxy(180,170,"....C BOX OFFICE....");
+    outtextxy(180,170,"....AMC Movie Theater....");
     delay(250);
   }
 clrscr();
 printf("********************************************************************************");
-printf("\n\n\t\t\tWELCOME TO C BOXOFFICE......\n\n");
+printf("\n\n\t\t\tWelcome to AMC Movie Theater......\n\n");
 printf("********************************************************************************");
 for(x=200;x<=300;x+=20)
 {
@@ -50,7 +50,6 @@ sound(x);
 delay(25);
 nosound();
 }
-//nosound();
 
 // Chossing between movies or events
 
@@ -68,8 +67,6 @@ scanf("%d",&a);
 getch();
 closegraph();
 }
-
-
 
 // Movie function
 
@@ -93,10 +90,10 @@ void movie()
 void nowshowing()
  {
    printf("\nThe movie list is..................");
-   printf("\n1.GEETA GOVINDAM\t\t2.GUDACHARI\n");
+   printf("\n1.Fast and Furious\t\t2.Naruto\n");
    printf("Choose a movie:");
    scanf("%d",&c);
-   if(c==1)     // Executes if GEETA GOVINDAM movie is chosen
+   if(c==1)     // Executes if Fast and Furious movie is chosen
       {
         printf("\n1.Book tickets\t\t2.Review\n");
         printf("Enter your option:");
@@ -105,42 +102,42 @@ void nowshowing()
 	             {
                   location();
                   printf("\n1.Theatre A\t\t2.Theatre B\n");
-                  printf("Choose a theatre for GEETA GOVINDAM:\n");
+                  printf("Choose a theatre for Fast and Furious:\n");
                   scanf("%d",&e);
                       if(e==1)      //Theatre Selection ::: Movie-->Book Tickets-->Theatre A
                           {
-                              printf("Choose A's show timings for GEETA GOVINDAM...\n");
+                              printf("Choose A's show timings for Fast and Furious...\n");
                               printf("1.Morning\t\t2.Afternoon\n");
                               printf("Choose an option:");
                               scanf("%d",&f);
                                   if(f==1)           //movie 1--> theatre A--> morning
                                       {
-	                                       printf("\nWELCOME TO GEETA GOVINDAM'S MORNING SHOW IN THEATRE A....");
+	                                       printf("\nWELCOME TO FAST AND FURIOUS'S MORNING SHOW IN THEATRE A....");
 	                                       clrscr();
 	                                       screen();
 	                                     }
                                   else               //Movie 1 -->Theatre A --> Afteroon
                                       {
-                                          printf("\nWELCOME TO GEETA GOVINDAM'S AFTERNOON SHOW IN THEATRE A.....");
+                                          printf("\nWELCOME TO FAST AND FURIOUS'S AFTERNOON SHOW IN THEATRE A.....");
                                           clrscr();
                                           screen();
 	                                     }
 	                           }
                         else   // Movie 1 --> Theatre B
                             {
-                              printf("\nChoose B's show timings for GEETA GOVINDAM\n");
+                              printf("\nChoose B's show timings for Fast and Furious\n");
                               printf("1.Morning\t\t2.Afternoon\n");
                               printf("Choose an option:");
                               scanf("%d",&f);
                                   if(f==1)  //Movie 1 --> Theatre B--> Morning
                                       {
-                                          printf("\nWELCOME TO GEETA GOVINDAM'S MORNING SHOW IN THEATRE B....");
+                                          printf("\nWELCOME TO FAST AND FURIOUS'S MORNING SHOW IN THEATRE B....");
                                           clrscr();
                                           screen();
                                       }
                                   else    // Movie 1 --> Theatre B --> Afternoon
                                       {
-                                          printf("\nWELCOME TO GEETA GOVINDAM'S AFTERNOON SHOW IN THEATRE B.....");
+                                          printf("\nWELCOME TO FAST AND FURIOUS'S AFTERNOON SHOW IN THEATRE B.....");
                                           clrscr();
                                           screen();
                                       }
@@ -148,8 +145,8 @@ void nowshowing()
                     }
           else  // Revie on Movie 1
             {
-                printf("\n\tReview of GEETA GOVINDAM....\n");
-                printf("    A 25-year-old man,Govind falls in love with Geetha. However,Geetha doesn't reciprocate his love as he comes across as a womenizer.Will he able to impress her?");
+                printf("\n\tReview of Fast and Furious....\n");
+                printf("     Fast & Furious is a media franchise centered on a series of action films that are largely concerned with street racing, heists, spies, and family.");
                 settextstyle(5,0,4);
                 setcolor(5);
                 outtextxy(40,100,"Overall Rating:4.5");
@@ -164,44 +161,44 @@ void nowshowing()
         location();
             if(d==1)  // Movie 2 -->Book Tickets
               {
-                  printf("\nChoose theatre for GUDACHARI:");
+                  printf("\nChoose theatre for Naruto:");
                   printf("\n1.A theatre\t\t2.B theatre");
                   printf("\nEnter your option:");
                   scanf("%d",&e);
                         if(e==1)   // Movie 2 --> Book Tickets --> Theatre A
                             {
-                                printf("\nChoose A's show timings for GUDACHARI");
+                                printf("\nChoose A's show timings for Naruto");
                                 printf("\n1.Morning\t\t2.Afternoon\n");
                                 printf("Choose an option:");
                                 scanf("%d",&f);
                                           if(f==1)   // Morning Show in Theatre A
                                               { 
-                                                  printf("\n\t\tWELCOME TO GUDACHARI'S MORNING SHOW IN THEATRE A....");
+                                                  printf("\n\t\tWELCOME TO NARUTO'S MORNING SHOW IN THEATRE A....");
                                                   clrscr();
                                                   screen();
                                               }
                                           else
                                               {
-                                                  printf("\n\t\tWELCOME TO GUDACHARI'S AFTERNOON SHOW IN THEATRE B.....");
+                                                  printf("\n\t\tWELCOME TO NARUTO'S AFTERNOON SHOW IN THEATRE B.....");
                                                   clrscr();
                                                   screen();
                                               }
                             }
                         else   // Movie 2--> Book Tickets --> Theatre B
                             {
-                                printf("\nChoose B's show timings for GUDACHARI\n");
+                                printf("\nChoose B's show timings for Naruto\n");
                                 printf("1.Morning\t\t2.Afternoon\n");
                                 printf("Choose an option:");
                                 scanf("%d",&f);
                                             if(f==1)
                                                 {
-                                                    printf("\n\t\tWELCOME TO GUDACHARI'S MORNING SHOW IN THEATRE A....");
+                                                    printf("\n\t\tWELCOME TO NARUTO'S MORNING SHOW IN THEATRE A....");
                                                     clrscr();
                                                     screen();
                                                 }
                                             else
                                                 {
-                                                    printf("\n\t\tWELCOME TO GUDACHARI'S AFTERNOON SHOW IN THEATRE B.....");
+                                                    printf("\n\t\tWELCOME TO NARUTO'S AFTERNOON SHOW IN THEATRE B.....");
                                                     clrscr();
                                                     screen();
                                                 }
@@ -212,8 +209,8 @@ void nowshowing()
         { 
                   settextstyle(12,0,8);
                   setcolor(RED);
-                  printf("\t\t Review of GUDACHARI....\n");
-                  printf("Arjun Kumar,a martyr's son and a trained agent from a program.\nIt is a journey to track down people who are responsible for framing him as the most wanted criminal");
+                  printf("\t\t Review of Naruto....\n");
+                  printf("It tells the story of Naruto Uzumaki, a young ninja who seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village.");
                   settextstyle(5,0,4);
                   setcolor(5);
                   outtextxy(40,100,"Overall Rating:4");
@@ -221,27 +218,23 @@ void nowshowing()
     }
   }
 
-
-
-
-
 // Coming Soon Function
 
 void comingsoon()
 {
     printf("Coming soon movies are....\n");
-    printf("1.Aravinda Sametha\t2. 2.0\n");
+    printf("1. Avengers\t2. Home Alone\n");
     printf("\nEnter ur choice:");
     scanf("%d",&t);
         if(t==1)
             {
-                printf("\n\t\tMovie name: ARAVINDA SAMETHA\n\t\tRelease Date:10 October 2018\n\n");
-                printf("\n\t\tBooking opens on  8 October 2018");
+                printf("\n\t\tMovie name: Avengers\n\t\tRelease Date:10 October 2022\n\n");
+                printf("\n\t\tBooking opens on  8 October 2022");
             }
         else
             {
-                printf("\n\t\tMovie name: 2.0\n\t\tRelease Date:29 November 2018\n\n");
-                printf("\n\t\tBooking opens on  27 November 2018");
+                printf("\n\t\tMovie name: Home Alone\n\t\tRelease Date:29 November 2022\n\n");
+                printf("\n\t\tBooking opens on  27 November 2022");
             }
   }
 
